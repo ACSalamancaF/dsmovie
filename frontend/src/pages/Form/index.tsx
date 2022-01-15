@@ -4,9 +4,10 @@ import { useParams } from 'react-router-dom';
 
 function Form() {
     /* pega o parametro da requisição */
-    const params = useParams();
+    const paramss = useParams();
+
     return (
-       <FormCard movieId={`&{params.movieId}`}/>
+       <FormCard movieId={`&{paramss.movieId}`}/>
     );
 }
 export default Form;
