@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import FormCard from 'components/FormCard';
 import { useParams } from 'react-router-dom';
 
 
 function Form() {
-    /* pega o parametro da requisição */
-    const paramss = useParams();
+    
+    const params = useParams();
 
     return (
-       <FormCard movieId={`&{paramss.movieId}`}/>
+       <FormCard movieId={`&{params.movieId}`}/>
     );
 }
 export default Form;
